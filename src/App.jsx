@@ -18,68 +18,39 @@ import { useScrollSpy } from './Hooks/useScrollSpy';
 import { useLanguage } from './Hooks/useLanguage';
 import { useLoadDescriptionText } from './Hooks/useLoadDescriptionText';
 import { useResizeWindow } from './Hooks/useResizeWindow';
+import { useNavigationScroll } from './Hooks/useNavigationScroll';
+import { useProgressNavigationScroll } from './Hooks/useProgressNavigationScroll';
+import { useServices } from './Hooks/useServices';
 
 export default function App() {
 
-  const [currentSelector, setCurrentSelector] = useState('#section_start');
-
-  const [scrollHeight, setScrollHeight] = useState(window.scrollY); // For scroll event
+   // State hooks for validation form
   const [message,setMessage] = useState(''); // For form validation
   const [loading, setLoading] = useState(false);
   const [contentTexarea, setContentTextarea] = useState('');
 
   
-  // CUSTOM HOOKS
+  // Custom Hooks
 
   const [ formatedMessage , changeLanguage ] = useLanguage();
 
-  useScrollSpy( document.querySelectorAll('.header__main .main__nav ul li span') );
+  useScrollSpy( document.querySelectorAll('.header__main .main__nav ul li span') ); // Get icon colored according his section to know position of page where you are
 
-  useLoadDescriptionText( formatedMessage );
+  useLoadDescriptionText( formatedMessage ); // make a transition of description of image about me bellow. Allocated in section header left
 
-  const [ headerWidth ] = useResizeWindow();
+  const [ headerWidth ] = useResizeWindow(); // Resize window according manage it both down or up , right of left to keep dimensions and get it responsive
 
-  const updateScrollHeight = () => {
+  const [ scrollTo ] = useNavigationScroll() // Click on each icons of navigate, it will scroll to his correspond section
 
-    setScrollHeight($(document).scrollTop() * 1.8);
+  const [ scrollHeight ] = useProgressNavigationScroll( window.scrollY ); // Checking current height of position of scroll to calculate the progress bottom of page. It shows how long time taken to get to the end of page
 
-  }
-  
-  // Functions and Events scroll
-  const scrollTo = (selector) => {
-
-    setCurrentSelector(selector);
-
-    console.log(selector);
-
-    $('html,body').animate({
-      scrollTop: $(selector).offset().top
-    }, 0);
-
-  }
 
   // Web services requestes functions
-  const downloadCV = async () => {
-
-    // Store the current value after using
-    let currentValue = $('#buttons__btn-downloadcv').val();
-
-    $('#buttons__btn-downloadcv').val('DOWNLOADING...');
-
-    const response = await fetch('https://igvdeveloper-ws-com.onrender.com/download/rnd_n8GiDBzS6xnXLrk11SEbQ7l85hrw', {
-      method: 'GET',
-      mode: 'cors',
-    });
-
-    if (!response.ok) {
-      if (response.status === 401) throw new Error(`No autorized service`);
-      if (response.status === 404) throw new Error(`No found request path service`);
-    }
+  const downloadCV = async() => {
 
     try {
 
-      const blob = await response.blob();
-
+      const blob = await useServices('download');
       // Create an <a> element to trigger the download
       const a = document.createElement('a');
       a.href = window.URL.createObjectURL(blob);
@@ -90,9 +61,6 @@ export default function App() {
       document.body.removeChild(a);
 
       console.log('File downloaded successfully');
-
-      // Once downloaded cv, retrieve the source value
-      $('#buttons__btn-downloadcv').val(currentValue);
 
     } catch (Error) {
 
@@ -184,29 +152,11 @@ export default function App() {
       setLoading(false);
     }
   };
-  
-
-  const contactMe = () => {
-    scrollTo('#section__contact');
-  }
-
-
-  // EVENTS SCROLL
-  useEffect(() => {
-
-    updateScrollHeight();
-    document.addEventListener('scroll', updateScrollHeight);
-
-    return () => {
-      document.removeEventListener('scroll', updateScrollHeight)
-    }
-
-  }, [updateScrollHeight, scrollHeight])
 
   return (
     <>
 
-        <Header headerWidth={headerWidth}  formatedMessage={formatedMessage} changeLanguage={changeLanguage} scrollHeight={scrollHeight} scrollTo={scrollTo} contactMe={contactMe} downloadCV={downloadCV} />
+        <Header headerWidth={headerWidth}  formatedMessage={formatedMessage} changeLanguage={changeLanguage} scrollHeight={scrollHeight} scrollTo={scrollTo} downloadCV={downloadCV} />
 
         <AboutMe headerWidth={headerWidth} formatedMessage={formatedMessage} />
 

@@ -61,7 +61,7 @@ export default function Header( props ){
                 <p className="overflow aboutme__text">
                     <Text formatedMessage={formatedMessage.header.text_header} type='header'/>
                 </p>
-                <ButtonsHeader formatedMessage={formatedMessage.header} contactMe={contactMe} downloadCV={downloadCV}/>
+                <ButtonsHeader formatedMessage={formatedMessage.header} downloadCV={downloadCV}/>
             </div>
         </>
         
