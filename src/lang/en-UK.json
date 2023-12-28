@@ -1,0 +1,84 @@
+{
+
+    "header": {
+
+        "title": "PORTFOLIO.",
+        "title_header": "Who am I?",
+        "text_header": "Person oriented to IT sector. Both coding and shooting troubles to get satisfied client. Beside I offer new ideas to get apps easier and optimized. I consider proactive and teacherself with forward on learning and brings others my knowledges. Get in contact with me to bring you services and offers. Don´t miss any chance",
+        "button_left": "Contact me",
+        "button_right": "Download CV",
+        "title_description":"HI, I´M",
+        "description_me":"IVAN",
+        "description_job":"WEB DEVELOPER"
+
+    },
+    "aboutme": {
+
+        "title_aboutme": "About me",
+        "text_aboutme": "The IT got me encouraged from I was child and it keeps doing now a day. I used for the first time a PC as I was 7 years old and was interested about there was inside of screen and box which we call motherboard. I took up on hiting to world so amazing. I consider teacherself",
+        "title_circles": {
+            "first_circle": "Sellings",
+            "second_circle": "Revenues",
+            "third_circle": "Optimization"
+        },
+        "timeline": {
+            "timeline_dates": {
+                "first": "September 2017 - March 2019",
+                "second": "March 2022 - May 2022",
+                "third": "May 2022 - November 2023"
+            },
+            "timeline_experiences": {
+                "experiences_title": {
+                    "first": "Web developer in Grupo Backup",
+                    "second": "Support IT Technician",
+                    "third": "Web developer in Previlabor"
+                },
+                "experiences_taskes": {
+                    "first": ["Management of users", "Management and maintenance of taxes and budgets"],
+                    "second": ["Bringing support users", "Assemblying and setting monitors"],
+                    "third": ["Developing apps for different departments", "Consuming and using Web Services", "Analising made apps and find solutions to improve them"]
+                },
+                "experiences_aptitudes": {
+                    "first": ["Autodidact", "Apps deployment", "App innovation", "Logical reasoning"],
+                    "second": ["Client service", "Troubleshooting", "Maintance of devices", "English"],
+                    "third": ["Autodidact", "Services IT", "Troubleshooting", "Apps deployment"]
+                }
+            }
+
+        }
+    },
+    "projects": {
+        "description_projects": "eng",
+        "links_projects": {
+            "first_link": "Demo",
+            "second_link": "GitHub"
+        }
+    },
+    "contact__form": {
+
+        "form_title": "Let´s talk. Get in touch on me",
+        "form_labels": [{
+                "label": "Tell us your name *",
+                "placeholder": "Full name"
+            },
+            {
+                "label": "Your email *",
+                "placeholder": "Eg:example@email.com"
+            },
+            {
+                "label": "Subject *",
+                "placeholder": "Wrime a subject"
+            }
+        ],
+        "form_textarea": {
+            "label": "What´s the offer for me? *",
+            "placeholder": "Write me a message"
+        },
+        "form_buttons": {
+            "first": "Send message",
+            "second": "Delefe fields"
+        }
+
+    }
+
+}

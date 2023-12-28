@@ -1,0 +1,30 @@
+{
+  "lanes": [{
+      "laneid": "1",
+      "lanename": "ENTRADA"
+    },
+    {
+      "laneid": "2",
+      "lanename": "SALIDA"
+    }
+  ],
+  "data": [
+
+    {
+      "laneid": "1",
+      "datetime": "2023-11-01 10:00:00",
+      "plate": "1111GGC"
+    },
+    {
+      "laneid": "1",
+      "datetime": "2023-11-01 10:00:05",
+      "plate": "2222FRS"
+    },
+    {
+      "laneid": "2",
+      "datetime": "2023-11-01 10:00:12",
+      "plate": "1111GGC"
+    } 
+  ]
+
+}

@@ -1,0 +1,413 @@
+:root{
+
+  --main-color: rgb(103, 103, 252);
+  --title-color:rgb(221, 218, 218);
+  --subtitle-color:rgb(204, 202, 202);
+  --secundary-color:rgb(165, 199, 28);
+  --green-gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,203,105,1) 0%, rgba(124,229,108,1) 0%, rgba(134,204,128,1) 100%, rgba(0,212,255,1) 100%);
+  --section-color:rgb(19, 19, 19);
+
+}
+
+html {
+
+  font-size:14px;
+  margin:0;
+  padding:0;
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--secundary-color);
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: greenyellow;
+}
+
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+h3 {
+  color:var(--secundary-color);
+  font-size: 2rem;
+}
+
+body {
+
+  background-image: url("./assets/images/body.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+
+
+@media screen and ( max-width:1200px ) {
+
+  .section__projects {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and ( max-width:1100px ) {
+  .overflow-aboutme .aboutme__text {
+
+    width: 65%;
+    
+  }
+
+  figure .caption__links-projects {
+
+    visibility: visible;
+  
+  }
+  
+  figure:nth-child(1) {
+  
+    background-image: url('./assets/images/preview-testerphp.gif') !important;
+  
+  }
+
+  figure:nth-child(2) {
+  
+    background-image: url('./assets/images/preview-crud-users.gif') !important;
+  
+  }
+  
+  figure::after {
+  
+    z-index:-1 !important;
+  
+  }
+  
+  .slider___caption {
+    
+    color:transparent;
+  
+  }
+}
+
+@media screen and ( max-width:1000px ) {
+
+  header{
+
+    width:100%;
+    min-width: 700px;
+    align-content:center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+  }
+
+  header .header__aside {
+
+    width:100%;
+
+  }
+
+  header .header__main {
+
+    width: 100%;
+
+  }
+
+  .overflow-description {
+
+    left:50%;
+
+  }
+
+  .overflow__image__me {
+
+    width:50%;
+
+  }
+
+  .overflow-aboutme {
+
+    display: none;
+
+  }
+  .overflow-aboutme-mobile {
+
+    display: block;
+    background:var(--section-color);
+    height: 100%;
+    padding-bottom: 3rem;
+
+  }
+
+  .overflow-aboutme-mobile .aboutme__title {
+
+    color:var(--secundary-color);
+    margin-bottom: -1rem;
+    font-size: 2rem;
+
+  }
+
+  .section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__circles {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+  }
+
+  .section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+
+  .section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content {
+
+    width: 100%;
+    margin-top: 10rem;
+
+  }
+
+  .timeline__list .list__options .point {
+    display: none;
+  }
+
+  .timeline__list .list__options .point::before{
+
+    position: absolute;
+    content:none;
+
+  }
+
+  .timeline__list .list__options .date-start {
+
+    position: absolute;
+    left:0 !important;
+    top:20% !important;
+
+  }
+
+.date-start {
+
+    color:rgb(228, 161, 36);
+    /* color:var(--section-color); */
+    padding:0.3rem;
+    width: 10%;
+    min-width: 200px;
+    border-radius:1rem;
+
+
+}
+
+.timeline__list::after {
+
+  position: absolute;
+  content:'';
+  width: 0.2rem;
+  right:0;
+  height: 100%;
+  background-image: linear-gradient(to bottom , rgb(233, 226, 217) , rgb(230, 227, 221) );
+
+} 
+
+.activeSlide {
+
+  margin:auto 0rem;
+  
+}
+
+
+}
+
+@media screen and ( max-width:700px ) {
+
+  header {
+
+    width: 100%;
+    min-width: 650px;
+
+  }
+
+  .overflow-description {
+
+    top:60%;
+    left:50%;
+    transform: translate(-50% , -50%);
+
+  }
+
+  .overflow__image__me {
+
+    width:100%;
+
+  }
+
+  .overflow-aboutme-mobile .aboutme__buttons {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-content:center;
+    align-items:center;
+
+  }
+
+  .overflow-aboutme-mobile .aboutme__buttons * {
+    min-width: 250px;
+  }
+
+  .section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__circles {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+
+  }
+
+  .activeSlide {
+
+    height:500px;
+    
+  }
+
+  .slider img {
+    min-height:auto;
+    height:600px;
+  }
+  
+  
+  .next {
+    right: 4%;
+    top: 92%;
+  }
+  
+  .prev {
+    left: 4%;
+    top: 92%;
+  }
+
+  .contact__image {
+    display: none;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .contact__image-footer {
+
+    display: block;
+    position:relative;
+
+  }
+
+  .contact__image-footer .image__footer {
+
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 3;
+    transform: translate(-50% , -50%);
+
+  }
+
+  .contact__image-footer .image__footer .footer__list {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+
+  }
+  
+  .contact__image-footer .image__footer .footer__list .list__options {
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+  }
+
+  .contact__image-footer .image__footer .footer__list .list__options a {
+
+    font-size: 3rem;
+    color: var(--secundary-color);
+
+  }
+
+  .contact__image-footer .image__footer .footer__list .list__options a:hover {
+
+    color:var(--title-color);
+
+  }
+
+  .section__projects figure {
+
+    width: 500px;
+    min-width:350px;
+    height:500px;
+
+  }
+
+  .caption__links-projects {
+
+    width: 100%;
+    flex-direction: row;
+    
+
+  }
+
+  .caption__links-projects div {
+
+    flex-direction: column;
+    width:100%;
+    margin:0 auto;
+    justify-content: center;
+    align-items:center;
+    
+
+  }
+
+  .slider___caption {
+
+    width:100%;
+    overflow: hidden; 
+
+  }
+
+}

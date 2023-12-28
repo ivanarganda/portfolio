@@ -1,0 +1,265 @@
+@import url("./index.css");
+
+.section__aboutme {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 33, 33);
+
+}
+.section__aboutme .aboutme_content {
+
+    color:var(--title-color);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    padding-top:3rem;
+    padding-bottom:2rem;
+
+}
+
+.section__aboutme .aboutme_content .content__paragrah h3 {
+
+    font-size: 2rem;
+
+}
+
+.section__aboutme .aboutme_content .content__paragrah span {
+
+    font-size: 1.2rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience {
+
+    width: 100%;
+
+}
+
+.section__aboutme .aboutme_content .content__experience h3 {
+
+    font-size: 2rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__circles {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-bottom: 5rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__circles .circles {
+
+    position: relative;
+    border-radius:50%;
+    color:var(--title-color);
+    background:rgb(34, 33, 33);
+    box-shadow:6px 6px 10px black , -6px -6px 10px -1px rgb(22, 22, 22);
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content {
+
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline {
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list {
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options {
+
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:2rem;
+    position:relative
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content {
+
+    width: 47%;
+    background:rgb(34, 31, 31);
+    border-radius:1rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: ease-in 200ms;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content img {
+
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in 300ms;
+    opacity: 1;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text {
+
+    position: absolute;
+    background:rgb(22, 22, 22 , 0.5);
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    text-wrap: pretty;
+    font-size: 1.2rem;
+    transition:all 300ms;
+    
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text .text__list-tasks {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.3rem;
+    align-items:center;
+    margin-bottom: 1rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text .text__list-tasks li {
+    list-style: none;
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text .text__list-aptitudes {
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text .text__list-aptitudes li::before{
+
+    content:'#';
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content .content__text .text__list-aptitudes li {
+
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    color:rgb(13, 255, 24);
+    padding:0.4rem;
+    border-radius:1rem;
+
+}
+
+.section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content:hover img {
+
+    opacity: 0.2;
+    box-sizing: content-box;
+    transition:all 300ms;
+
+}
+
+
+.timeline__list::after {
+
+    position: absolute;
+    content:'';
+    width: 0.2rem;
+    height: 100%;
+    background-image: linear-gradient(to bottom , rgb(233, 226, 217) , rgb(230, 227, 221) );
+
+}
+
+.timeline__list .list__options .point::before{
+
+    position: absolute;
+    content:' ';
+    width: 1rem;
+    height: 1rem;
+    font-size:2rem;
+    left:49.200%;
+    top:0;
+    transform: translate(0% , 0%);
+    z-index: 1;
+    background:orange;
+    border-radius:50%;
+    border:0.4rem solid var(--title-color);
+
+}
+
+.timeline__list .list__options:nth-child(even) .date-start {
+
+    position: absolute;
+    right:29.00%;
+    top:-34%;
+
+}
+
+.timeline__list .list__options:nth-child(odd) .date-start {
+
+    position: absolute;
+    left:29.00%;
+    top:-35%;
+    
+
+}
+
+.date-start {
+
+    color:rgb(228, 161, 36);
+    /* color:var(--section-color); */
+    padding:0.3rem;
+    width: 10%;
+    min-width: 200px;
+    border-radius:1rem;
+
+}

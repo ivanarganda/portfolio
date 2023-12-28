@@ -1,0 +1,402 @@
+
+@import url("./index.css");
+#root {
+
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap:2rem;
+
+}
+
+/* HEADER */
+header {
+
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  border-radius:1rem;
+
+}
+
+header .header__aside {
+
+  width:30%;
+  background-color:rgb(19, 19, 19);
+  flex-direction: column;
+  align-items:center;
+  position: relative
+
+}
+
+header .header__aside .aside__title {
+
+  width: 100%;
+  color: var(--title-color);
+
+}
+
+header .header__aside .aside__language {
+
+  width: 100%;
+
+}
+
+header .header__aside .aside__language .language__button {
+
+  font-size: x-large;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  transition: ease-in-out 300ms;
+
+}
+
+header .header__aside .aside__language .language__button:hover::after {
+
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:rgb(34, 31, 31, 0.2);
+  top:0;
+  left:0;
+
+
+}
+
+
+header .header__aside .aside__description__me {
+
+  color:white;
+
+}
+
+header .header__main {
+
+  padding:0;
+  margin:0;
+  height: 100%;
+  width: 70%;
+  position: relative;
+
+}
+
+header .header__main::after{
+  content:' ';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  right: 0;
+  background:rgba(0, 0, 0, 0.7);
+
+}
+
+.main__nav {
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background:rgb(19, 19, 19) !important;
+  padding:0rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin:0 auto;
+  border-top: 0.5px solid rgb(39, 37, 37);
+
+}
+.main__nav ul {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 0;
+  margin-top: 2rem;
+
+}
+.main__nav  li {
+
+  background:transparent;
+
+}
+
+.main__nav  li:hover{
+
+  background:none !important;
+
+}
+
+.main__nav  li:hover span {
+  color:var(--secundary-color);
+  opacity: 1;
+}
+
+.main__nav  li span {
+
+  margin-top: -0.5rem;
+  margin-left:-1.5rem;
+  color:var(--secundary-color);
+  transition: ease-out 300ms;
+  font-size: 2rem;
+  cursor:pointer;
+
+}
+
+
+.main__nav  li span:hover{
+
+  color:white;
+
+}
+
+.main__nav  li span.active{
+
+  color:white;
+
+}
+
+.main__nav ul li a {
+
+  color:transparent;
+  display: none;
+
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: var(--secundary-color);
+  border-radius: 4px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.progress-bar {
+
+  height: 100%;
+  width: 0;
+  background-color: #007bff; /* Change this to your desired color */
+  border-radius: 4px;
+
+}
+
+
+header .header__main .main__slider {
+
+  width:100%; 
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+}
+
+header .header__main img {
+
+  width:100%; 
+  filter: opacity(0.5);
+
+}
+
+.slider__navbar {
+
+  display: none;
+
+}
+
+.overflow-description {
+
+  position: absolute;
+  top:60%;
+  left:30%;
+  transform: translate(-50%, -50%);
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+
+.overflow-description * {
+
+  width: 100%;
+
+}
+
+.overflow__image__me {
+
+  width: 30%;
+  height: 20%;
+  border-radius: 50%;
+  border:0.3rem solid var(--secundary-color);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+}
+
+.overflow-description .aside__description__me {
+
+  font-size:1.7rem;
+  color:white;
+
+}
+
+
+.overflow-description .aside__description__job {
+  font-size: 1.4rem;
+  color:var(--secundary-color);
+  display: block;
+  margin-top:-1rem;
+  overflow: hidden;
+}
+
+.overflow-description .profession{
+
+  
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  animation: typeProfession 4s steps(15) infinite,
+        blink .5s infinite step-end alternate;
+
+}
+
+.overflow-description .name {
+
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 6ch;
+  animation: typeName 2s steps(6) infinite,
+        blink .5s infinite step-end alternate;  
+
+}
+
+.overflow-aboutme {
+
+  position: absolute;
+  left:65%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+
+.overflow-aboutme * {
+
+  width: 100%;
+
+}
+.overflow-aboutme-mobile {
+
+  display: none;
+  
+}
+
+.overflow-aboutme .aboutme__title {
+
+  font-size: 2rem;
+  color:var(--secundary-color);
+
+}
+
+.overflow-aboutme .aboutme__text {
+
+  font-size: 1.2rem;
+  text-wrap: pretty;
+  font-family:Arial, Helvetica, sans-serif;
+  text-wrap: balance;
+  width: 50%;
+  font-weight:100;
+  color:var(--title-color);
+
+}
+
+.overflow-aboutme-mobile .aboutme__text {
+
+  font-size: 1.2rem;
+  color:var(--title-color);
+  padding: 1rem;
+
+}
+
+.overflow-aboutme-mobile .aboutme__title {
+
+  font-size: 2rem;
+  color:var(--secundary-color)
+
+}
+
+.overflow-aboutme .aboutme__text > p , .overflow-aboutme-mobile .aboutme__text > p {
+
+  box-shadow:0 0 4rem 0 black;
+  
+}
+
+
+.aboutme__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:1rem;
+}
+
+.aboutme__buttons input[type="button"]{
+
+  border:none;
+  margin-top:0rem;
+  box-shadow:0 0 0.3rem 0 rgb(0, 0, 0);
+  background: var(--secundary-color);
+  color:rgb(12, 12, 12);
+  display: block;
+  padding:0.8rem;
+  border-radius:0.7rem;
+  cursor: pointer;
+  transition: ease-out 300ms;
+  font-weight: bold;
+  font-family:"arial";
+  white-space:none;
+  text-wrap: nowrap;
+  width: 30%;
+  font-size: 1.2rem;
+
+}
+
+.aboutme__buttons input[type="button"]:hover{
+
+  background:rgb(7, 190, 7);
+
+}
+
+.aboutme__buttons input[type="button"]:active{
+
+  background:rgb(226, 240, 173);
+  color:rgb(80, 80, 80);
+
+}
+
+@keyframes typeProfession{
+
+  from { width: 0 } 
+
+}
+
+@keyframes typeName{
+
+  from { width: 0 } 
+  
+}

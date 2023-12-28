@@ -1,0 +1,77 @@
+{
+    "header": {
+        "title": "PORTFOLIO.",
+        "title_header": "Qui suis-je ?",
+        "text_header": "Personne orientée vers le secteur de l'informatique. Je code et résous des problèmes pour satisfaire le client. En plus, j'offre de nouvelles idées pour rendre les applications plus faciles et optimisées. Je me considère comme proactif et autodidacte, toujours prêt à apprendre et à partager mes connaissances. Contactez-moi pour bénéficier de mes services et offres. Ne manquez aucune chance.",
+        "button_left": "Contactez-moi",
+        "button_right": "Télécharger CV",
+        "title_description":"BONJOUR, JE SUIS",
+        "description_me":"IVAN",
+        "description_job":"DÉVELOPEUR WEB"
+    },
+    "aboutme": {
+        "title_aboutme": "À propos de moi",
+        "text_aboutme": "L'informatique m'a passionné depuis mon enfance et continue de le faire aujourd'hui. J'ai utilisé un PC pour la première fois à l'âge de 7 ans et j'étais intéressé par ce qu'il y avait à l'intérieur de l'écran et de la boîte que nous appelons carte mère. J'ai été fasciné par ce monde incroyable. Je me considère comme autodidacte.",
+        "title_circles": {
+            "first_circle": "Ventes",
+            "second_circle": "Revenus",
+            "third_circle": "Optimisation"
+        },
+        "timeline": {
+            "timeline_dates": {
+                "first": "Septembre 2017 - Mars 2019",
+                "second": "Mars 2022 - Mai 2022",
+                "third": "Mai 2022 - Novembre 2023"
+            },
+            "timeline_experiences": {
+                "experiences_title": {
+                    "first": "Développeur web chez Grupo Backup",
+                    "second": "Technicien de support informatique",
+                    "third": "Développeur web chez Previlabor"
+                },
+                "experiences_taskes": {
+                    "first": ["Gestion des utilisateurs", "Gestion et maintenance des impôts et des budgets"],
+                    "second": ["Support aux utilisateurs", "Assemblage et configuration des moniteurs"],
+                    "third": ["Développement d'applications pour différents départements", "Consommation et utilisation de services web", "Analyse des applications créées et recherche de solutions pour les améliorer"]
+                },
+                "experiences_aptitudes": {
+                    "first": ["Autodidacte", "Déploiement d'applications", "Innovation d'applications", "Raisonnement logique"],
+                    "second": ["Service client", "Résolution de problèmes", "Maintenance des appareils", "Anglais"],
+                    "third": ["Autodidacte", "Services informatiques", "Résolution de problèmes", "Déploiement d'applications"]
+                }
+            }
+        }
+    },
+    "projects": {
+        "description_projects": "eng",
+        "links_projects": {
+            "first_link": "Démo",
+            "second_link": "GitHub"
+        }
+    },
+    "contact__form": {
+        "form_title": "Discutons. Prenez contact avec moi",
+        "form_labels": [
+            {
+                "label": "Indiquez votre nom *",
+                "placeholder": "Nom complet"
+            },
+            {
+                "label": "Votre e-mail *",
+                "placeholder": "Exemple : exemple@email.com"
+            },
+            {
+                "label": "Sujet *",
+                "placeholder": "Rédigez un sujet"
+            }
+        ],
+        "form_textarea": {
+            "label": "Quelle est l'offre pour moi ? *",
+            "placeholder": "Écrivez-moi un message"
+        },
+        "form_buttons": {
+            "first": "Envoyer le message",
+            "second": "Effacer les champs"
+        }
+    }
+}

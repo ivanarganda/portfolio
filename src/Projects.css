@@ -1,0 +1,175 @@
+@import url("./index.css");
+
+.section__projects {
+
+    width: 100%;
+    background-color: var(--section-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap: 1rem;
+
+}
+
+figure {
+
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:1rem;
+    transition: all 0.5s;
+    
+}
+
+.slider___caption {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    z-index: 2;
+    overflow: auto;
+    text-wrap:balance;
+    margin:0;
+    color:var(--title-color);
+    
+
+}
+
+.slider___caption h2 {
+
+    font-size: 1.7rem;
+
+}
+
+.slider___caption p {
+
+    font-size: medium;
+
+}
+
+.slider___caption ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items:center;
+
+}
+
+.slider___caption ul li {
+
+    list-style: none;
+    font-weight: bold;
+
+}
+
+figure::after {
+    
+    content:' ';
+    background:rgba(0, 8, 8, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius:1rem;
+
+}
+
+.caption__links-projects {
+
+    position: absolute;
+    /* background:rgba(0, 8, 8, 0.5); */
+    width: 93.0%;
+    height: 100%;
+    left: 0;
+    top:0;
+    transform: translate(0.1% , -4%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    visibility: hidden;
+
+
+}
+
+.caption__links-projects div {
+
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.caption__links-projects div li {
+
+    list-style: none;
+    width: 100%;
+
+}
+
+.caption__links-projects div li a {
+
+    font-size: 3rem;
+    color:var(--secundary-color);
+    transition: all 0.3s;
+
+}
+
+.caption__links-projects div li a:hover {
+
+    color: orange;
+
+}
+
+figure:hover .caption__links-projects {
+
+    visibility: visible;
+
+}
+
+figure:nth-child(1):hover {
+
+    background-image: url('./assets/images/preview-testerphp.gif') !important;
+
+}
+
+figure:nth-child(1):hover::after {
+
+    z-index:-1 !important;
+
+}
+
+figure:nth-child(1):hover .slider___caption {
+    
+    color:transparent;
+
+}
+
+figure:nth-child(2):hover {
+
+    background-image: url('./assets/images/preview-crud-users.gif') !important;
+
+}
+
+figure:nth-child(2):hover::after {
+
+    z-index:-1 !important;
+
+}
+
+figure:nth-child(2):hover .slider___caption {
+    
+    color:transparent;
+
+}
