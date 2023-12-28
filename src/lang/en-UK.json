@@ -1,24 +1,21 @@
 {
-
     "header": {
-
         "title": "PORTFOLIO.",
         "title_header": "Who am I?",
-        "text_header": "Person oriented to IT sector. Both coding and shooting troubles to get satisfied client. Beside I offer new ideas to get apps easier and optimized. I consider proactive and teacherself with forward on learning and brings others my knowledges. Get in contact with me to bring you services and offers. Don´t miss any chance",
-        "button_left": "Contact me",
+        "text_header": "Self-taught individual with 7+ years of experience in web development, including 3+ years working in specialized companies, focusing on creating and optimizing software solutions in both frontend and backend.",
+        "button_left": "Contact Me",
         "button_right": "Download CV",
-        "title_description":"HI, I´M",
-        "description_me":"IVAN",
-        "description_job":"WEB DEVELOPER"
-
+        "button_read_more":"Read more",
+        "title_description": "HELLO, I'M",
+        "description_me": "IVAN",
+        "description_job": "WEB DEVELOPER"
     },
     "aboutme": {
-
-        "title_aboutme": "About me",
-        "text_aboutme": "The IT got me encouraged from I was child and it keeps doing now a day. I used for the first time a PC as I was 7 years old and was interested about there was inside of screen and box which we call motherboard. I took up on hiting to world so amazing. I consider teacherself",
+        "title_aboutme": "About Me",
+        "text_aboutme": "I began my professional career from my home as a self-taught individual due to my burning passion for learning, taking on new challenges, and continually improving my skills in programming, logic, and performance. My journey in this field is not just about fulfilling a dream of working in front of a computer; it is rooted in my determination to excel and my desire to share my knowledge with the world. Computer science is not just a profession for me; it's a way of life and a true passion. Even when I'm not formally working, my commitment persists. Day after day, I dedicate time to study, explore documentation on the latest technologies, stay informed about emerging trends, and constantly seek opportunities for innovation. My self-taught approach has not only allowed me to acquire valuable skills on my own but has also driven me to overcome obstacles and bring a fresh and creative approach to the projects I engage in. I am convinced that this passion and constant commitment are qualities that can make a difference in any professional environment. With over 7 years of experience in web development, including 3 years in the corporate world, I have specialized in creating and optimizing software solutions in both frontend and backend, using technologies such as HTML, CSS, JavaScript, ReactJS, PHP, and NodeJS Express, among others. In my last role at Previlabor, I made significant contributions to improving internal processes, including the implementation of an automated document generation system and a RESTful web API service for Laboratorios Echevarne, resulting in an efficiency increase of over 15%. Furthermore, I achieved a notable optimization in PDF document generation within the company's ERP, reducing processing time from one hour to just 4 seconds. I am passionate about finding innovative solutions that not only enhance operational efficiency but also have a positive impact on revenue and productivity. My experience has allowed me to develop strong skills in problem-solving, process optimization, and teamwork. I am looking for opportunities where I can apply my web development expertise and continue to grow professionally.",
         "title_circles": {
-            "first_circle": "Sellings",
-            "second_circle": "Revenues",
+            "first_circle": "Sales",
+            "second_circle": "Revenue",
             "third_circle": "Optimization"
         },
         "timeline": {
@@ -29,56 +26,52 @@
             },
             "timeline_experiences": {
                 "experiences_title": {
-                    "first": "Web developer in Grupo Backup",
-                    "second": "Support IT Technician",
-                    "third": "Web developer in Previlabor"
+                    "first": "Web Developer at Grupo Backup",
+                    "second": "IT Support Technician",
+                    "third": "Web Developer at Previlabor"
                 },
                 "experiences_taskes": {
-                    "first": ["Management of users", "Management and maintenance of taxes and budgets"],
-                    "second": ["Bringing support users", "Assemblying and setting monitors"],
-                    "third": ["Developing apps for different departments", "Consuming and using Web Services", "Analising made apps and find solutions to improve them"]
+                    "first": ["User Management", "Tax and Budget Management"],
+                    "second": ["User Support", "Monitor Assembly and Configuration"],
+                    "third": ["Development of applications for various departments", "Consumption and utilization of web services", "Analysis of created applications and seeking solutions for improvement"]
                 },
                 "experiences_aptitudes": {
-                    "first": ["Autodidact", "Apps deployment", "App innovation", "Logical reasoning"],
-                    "second": ["Client service", "Troubleshooting", "Maintance of devices", "English"],
-                    "third": ["Autodidact", "Services IT", "Troubleshooting", "Apps deployment"]
+                    "first": ["Self-taught", "Application Implementation", "Application Innovation", "Logical Reasoning"],
+                    "second": ["Customer Service", "Problem Solving", "Device Maintenance", "English"],
+                    "third": ["Self-taught", "IT Services", "Problem Solving", "Application Implementation"]
                 }
             }
-
         }
     },
     "projects": {
-        "description_projects": "eng",
+        "description_projects": "are",
         "links_projects": {
-            "first_link": "Demo",
+            "first_link": "Try",
             "second_link": "GitHub"
         }
     },
     "contact__form": {
-
-        "form_title": "Let´s talk. Get in touch on me",
+        "form_title": "Let's Talk. Get in Touch with Me",
         "form_labels": [{
-                "label": "Tell us your name *",
-                "placeholder": "Full name"
+                "label": "Tell Us Your Name *",
+                "placeholder": "Full Name"
             },
             {
-                "label": "Your email *",
-                "placeholder": "Eg:example@email.com"
+                "label": "Your Email *",
+                "placeholder": "Example: example@email.com"
             },
             {
                 "label": "Subject *",
-                "placeholder": "Wrime a subject"
+                "placeholder": "Write a Subject"
             }
         ],
         "form_textarea": {
-            "label": "What´s the offer for me? *",
+            "label": "What's the offer for me? *",
             "placeholder": "Write me a message"
         },
         "form_buttons": {
-            "first": "Send message",
-            "second": "Delefe fields"
+            "first": "Send Message",
+            "second": "Clear Fields"
         }
-
     }
-
 }

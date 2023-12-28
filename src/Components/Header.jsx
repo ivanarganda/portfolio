@@ -51,7 +51,7 @@ export default function Header( props ){
                 <div className="overflow-aboutme">
                     <h3 className="overflow aboutme__title">{formatedMessage.header.title_header}</h3>
                     <p className="overflow aboutme__text">
-                        <Text formatedMessage={formatedMessage.header.text_header} type='header'/> 
+                        <Text formatedMessage={[formatedMessage.header.text_header,formatedMessage.header.button_read_more]} type='header'/> 
                     </p>
                     <ButtonsHeader formatedMessage={formatedMessage.header} contactMe={contactMe} downloadCV={downloadCV}/>
                 </div>
@@ -59,7 +59,7 @@ export default function Header( props ){
             <div className="overflow-aboutme-mobile">
                 <h3 className="overflow aboutme__title">{formatedMessage.header.title_header}</h3>
                 <p className="overflow aboutme__text">
-                    <Text formatedMessage={formatedMessage.header.text_header} type='header'/>
+                    <Text formatedMessage={[formatedMessage.header.text_header,formatedMessage.header.button_read_more]} type='header'/>
                 </p>
                 <ButtonsHeader formatedMessage={formatedMessage.header} downloadCV={downloadCV}/>
             </div>
