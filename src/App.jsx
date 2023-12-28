@@ -1,26 +1,26 @@
 // HOOKS
 import React, { useEffect, useState , useCallback } from 'react';
 
+import scrollreveal from 'scrollreveal'; 
+
 // COMPONENTS
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
 import Projects from './Components/Projects';
-import ContactForm from './Components/ContactForm';
-import englishMessages from './lang/en-UK.json';
-import spanishMessages from './lang/es-ES.json';
-import frenchMessages from './lang/fr-FR.json';  
+import ContactForm from './Components/ContactForm'; 
 
 // CSS
 import "./Header.css";
 import "./AboutMe.css";
 import "./Projects.css";
 import "./ContactForm.css";
+import { useScrollSpy } from './Hooks/useScrollSpy';
+import { useLanguage } from './Hooks/useLanguage';
+import { useLoadDescriptionText } from './Hooks/useLoadDescriptionText';
+import { useResizeWindow } from './Hooks/useResizeWindow';
 
 export default function App() {
 
-  const [headerWidth, setHeaderWidth] = useState(window.innerWidth);
-  const [decrement, setDecrement] = useState(20);
-  const [isMobile, setIsMobile] = useState(false);
   const [currentSelector, setCurrentSelector] = useState('#section_start');
 
   const [scrollHeight, setScrollHeight] = useState(window.scrollY); // For scroll event
@@ -28,90 +28,23 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [contentTexarea, setContentTextarea] = useState('');
 
-  const [ language , setLanguage ] = useState(englishMessages);
+  
+  // CUSTOM HOOKS
 
-  const formatedMessage = language;
+  const [ formatedMessage , changeLanguage ] = useLanguage();
 
-  const changeLanguage = useCallback(( lang )=>{
-    
-    let languages = {
-      "es":spanishMessages,
-      "en":englishMessages,
-      "fr":frenchMessages
-    }
+  useScrollSpy( document.querySelectorAll('.header__main .main__nav ul li span') );
 
-    setLanguage( languages[lang] );
-    
-  },[ language ])
+  useLoadDescriptionText( formatedMessage );
 
-  const textLoad = useCallback(()=>{
-
-      const description_job = $('.overflow-description .aside__description__job');
-
-      description_job.text( "" ); 
-
-      setTimeout(()=>{
-
-          description_job.text( "" ); 
-
-          description_job.removeClass("profession").addClass("name");
-
-          description_job.text( language.header.description_me ); 
-
-      },0);
-
-      setTimeout(()=>{
-
-          description_job.text( "" ); 
-
-          description_job.removeClass("name").addClass("profession");
-
-          description_job.text( language.header.description_job );
-
-      },2000);
-
-  },[language])
-
-  useEffect(()=>{
-    
-    textLoad();
-    const loadText = setInterval(textLoad(),6000);
-
-  },[ textLoad() ])
+  const [ headerWidth ] = useResizeWindow();
 
   const updateScrollHeight = () => {
 
     setScrollHeight($(document).scrollTop() * 1.8);
 
   }
-
-  const updateHeaderWidth = () => {
-
-    // Check the user agent string for common mobile keywords
-    var mobileKeywords = ['android', 'webos', 'iphone', 'ipad', 'ipod', 'blackberry', 'iemobile', 'opera mini', 'windows phone', 'windows mobile', 'symbian', 'mobile', 'mini', 'palm', 'smartphone'];
-    var userAgent = navigator.userAgent.toLowerCase();
-
-
-
-    for (var i = 0; i < mobileKeywords.length; i++) {
-      if (userAgent.indexOf(mobileKeywords[i]) > -1) {
-        setIsMobile(true);
-        break;
-      }
-    }
-
-    if (isMobile && window.innerWidth < 700) {
-
-      if (window.innerWidth < 400) {
-        setDecrement(0);
-      }
-
-    }
-
-    setHeaderWidth(window.innerWidth - decrement);
-
-  }
-
+  
   // Functions and Events scroll
   const scrollTo = (selector) => {
 
@@ -257,18 +190,6 @@ export default function App() {
     scrollTo('#section__contact');
   }
 
-  // EVENT RESIZE
-  useEffect(() => {
-    updateHeaderWidth(); // Set initial header width
-    window.addEventListener('resize', updateHeaderWidth);
-
-    // Remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('resize', updateHeaderWidth);
-    };
-
-  }, [updateHeaderWidth])
-
 
   // EVENTS SCROLL
   useEffect(() => {
@@ -281,39 +202,6 @@ export default function App() {
     }
 
   }, [updateScrollHeight, scrollHeight])
-
-  // Scroll spy, take an observ on each section to as user scrolls a section, mark his correspond icon of navbar header
-  useEffect(() => {
-
-    const options_links = document.querySelectorAll('.header__main .main__nav ul li span');
-
-    const observation = new IntersectionObserver((entries) => {
-      entries.forEach((entrie) => {
-        if (entrie.isIntersecting) {
-          options_links.forEach((icon) => {
-            $(icon).removeClass('active');
-            const currentId = '#' + entrie.target.id;
-            if ($(icon).prop("id") === currentId) {
-              $(icon).addClass('active');
-            }
-          })
-        }
-      })
-    }, {
-      threshold: 0.2,
-      root: null,
-      rootMargin: '100px 0px -200px 0px'
-    });
-
-    document.querySelectorAll('.sections').forEach((header) => {
-      observation.observe(header);
-    })
-
-    return () => {
-      observation.disconnect();
-    }
-
-  }, [])
 
   return (
     <>
