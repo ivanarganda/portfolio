@@ -3,6 +3,7 @@ import BNP from './../assets/images/BNP.jpg';
 import GP from './../assets/images/grupoBackup.jpeg';
 import PRE from './../assets/images/Previlabor.jpg';
 import CircularProgressBar from './CircleProgress';
+import ReactApexChart from "react-apexcharts";
 import Text from './Text';
 export default function AboutMe( props ) {
 
@@ -23,6 +24,7 @@ export default function AboutMe( props ) {
                       <div>
                         <h3>{formatedMessage.aboutme.title_circles.first_circle}</h3>
                         <CircularProgressBar radius={50} strokeWidth={3} percentage={15} text={'+15%'}/>
+                      
                       </div>
                       <div>
                         <h3>{formatedMessage.aboutme.title_circles.second_circle}</h3>

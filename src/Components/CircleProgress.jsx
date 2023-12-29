@@ -1,16 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-const CircularProgressBar = ({ radius, strokeWidth, percentage , text }) => {
+const CircularProgressBar = ({ radius, strokeWidth, percentage, text }) => {
   const [dashOffset, setDashOffset] = useState(0);
   const circumference = 2 * Math.PI * radius;
+  const counter = useRef(0);
 
   useEffect(() => {
-    const offset = circumference - (percentage / 100) * circumference;
-    setDashOffset(offset);
+    const targetCounter = parseInt(percentage);
+    const step = targetCounter > counter.current ? 1 : -1;
+
+    const interval = setInterval(() => {
+      if (counter.current !== targetCounter) {
+        counter.current += step;
+        const offset = circumference - (counter.current / 100) * circumference;
+        setDashOffset(offset);
+      }
+    }, 10);
+
+    return () => clearInterval(interval);
   }, [percentage, radius, circumference]);
 
   return (
-    <svg style={{transform:'rotate(-90deg)', marginTop:'0rem'}}
+    <svg
+      style={{ transform: 'rotate(-90deg)', marginTop: '0rem' }}
       width={radius * 4}
       height={radius * 3}
       viewBox={`-1 -2 ${radius * 2} ${radius * 2.2}`}
@@ -34,7 +46,7 @@ const CircularProgressBar = ({ radius, strokeWidth, percentage , text }) => {
         strokeDashoffset={dashOffset}
         strokeLinecap="round"
       />
-      <text style={{transform:'rotate(90deg)'}}
+      <text style={{ transform: 'rotate(90deg)' }}
         x="50%"
         y="-43%"
         dominantBaseline="middle"
@@ -49,4 +61,4 @@ const CircularProgressBar = ({ radius, strokeWidth, percentage , text }) => {
   );
 };
 
-export default CircularProgressBar;
+export default CircularProgressBar; 
