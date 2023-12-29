@@ -1,8 +1,6 @@
 // HOOKS
 import React, { useEffect, useState , useCallback } from 'react';
 
-import scrollreveal from 'scrollreveal'; 
-
 // COMPONENTS
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
@@ -21,6 +19,7 @@ import { useResizeWindow } from './Hooks/useResizeWindow';
 import { useNavigationScroll } from './Hooks/useNavigationScroll';
 import { useProgressNavigationScroll } from './Hooks/useProgressNavigationScroll';
 import { useServices } from './Hooks/useServices';
+import { useIntersectionObserver } from './Hooks/useIntersectionObserver';
 
 export default function App() {
 
@@ -31,6 +30,17 @@ export default function App() {
 
   
   // Custom Hooks
+
+  useIntersectionObserver([
+    'overflow-description',
+    'overflow-aboutme',
+    'content__paragrah',
+    'highlights__circles',
+    'highlights__content',
+    'section__projects',
+    'section__contact',
+    'contact__image-footer'
+  ]);
 
   const [ formatedMessage , changeLanguage ] = useLanguage();
 
