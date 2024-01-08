@@ -1,5 +1,6 @@
 import img from './../assets/images/preview-testerphp.jpg';
 import img2 from './../assets/images/preview-crud-users.jpg';
+import img3 from './../assets/images/preview-dashboard-store.jpg';
 
 export const images = [
     {
@@ -27,6 +28,16 @@ export const images = [
         Cada operación realizará una solicitud al servicio web PHP que se encuentra en una carpeta llamada "ws-users", la cual está alojada en GitHub.
         Hecho con: ` ,
         languages: [{ name: 'HTML5' }, { name: 'Bootstrap' } , { name: 'Flexbox' } , { name: 'React' }, { name: 'WS REST php' }, { name:'MySQL' }],
-        linksProjects:[{ webpage:'http://crudspausers.atwebpages.com/' , github:'https://github.com/ivanarganda/crudusers' }]
+        linksProjects:[{ webpage:'https://crudspausers.atwebpages.com/' , github:'https://github.com/ivanarganda/crudusers' }]
+    },
+    {
+        img: 'url(' + img3 + ')',
+        title: 'Dashboard store',
+        descriptionENG: `An app store where you can add products to cart and you login to save to favorites and share them other users. It shows a pretty sidebar left responsive due to 
+            change of position from left to bottom with another design to fit according user experience. And a navbar which is fixed, besides scrolling it keeps being at his same position. Both are unchanged, so is an SPA app` ,
+        descriptionES: `Una tienda de aplicaciones donde puedes agregar productos al carrito y iniciar sesión para guardarlos en favoritos y compartirlos con otros usuarios. Muestra una barra lateral izquierda atractiva y receptiva que cambia de posición de izquierda a abajo con otro diseño para adaptarse a la experiencia del usuario. Y una barra de navegación que permanece fija, incluso al desplazarse, se mantiene en la misma posición. 
+        Ambas partes no cambian, por lo que es una aplicación de página única (SPA, por sus siglas en inglés).` ,
+        languages: [{ name: 'HTML5' }, { name: 'Tailwind' } , { name: 'React' } , { name: 'Laravel' }, { name: 'WS REST Laravel' }, { name:'MySQL' }],
+        linksProjects:[{ webpage:'https://igvtech.online/' , github:'https://github.com/ivanarganda/dashboard-store' }]
     }
 ];

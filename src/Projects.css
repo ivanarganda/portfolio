@@ -23,6 +23,7 @@ figure {
     background-repeat: no-repeat;
     border-radius:1rem;
     transition: all 0.5s;
+    object-fit: cover;
     
 }
 
@@ -141,6 +142,8 @@ figure:hover .caption__links-projects {
 figure:nth-child(1):hover {
 
     background-image: url('./assets/images/preview-testerphp.gif') !important;
+    object-fit: cover;
+    background-size:cover;
 
 }
 
@@ -159,6 +162,8 @@ figure:nth-child(1):hover .slider___caption {
 figure:nth-child(2):hover {
 
     background-image: url('./assets/images/preview-crud-users.gif') !important;
+    object-fit: cover;
+    background-size:cover;
 
 }
 
@@ -169,6 +174,26 @@ figure:nth-child(2):hover::after {
 }
 
 figure:nth-child(2):hover .slider___caption {
+    
+    color:transparent;
+
+}
+
+figure:nth-child(3):hover {
+
+    background-image: url('./assets/images/preview-dashboard-store.gif') !important;
+    object-fit: cover;
+    background-size:cover;
+
+}
+
+figure:nth-child(3):hover::after {
+
+    z-index:-1 !important;
+
+}
+
+figure:nth-child(3):hover .slider___caption {
     
     color:transparent;
 
