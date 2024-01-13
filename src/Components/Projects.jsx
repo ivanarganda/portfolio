@@ -9,16 +9,19 @@ import { GoEye , GoRepo } from "react-icons/go";
 
 export default function Projects(props) { 
 
-  const { headerWidth , formatedMessage } = props; 
+  const { headerWidth , formatedMessage } = props;
 
   return (
     <section style={{ width:'100%' , minWidth:headerWidth }} id='section__projects' className="sections section__projects">
-        {images.map((i, idx) => (
-            
-            <figure key={idx} style={{backgroundImage:i.img}}>
+        {images.map((i, idx) => {
+            let description = ``;
+            if ( formatedMessage.projects.description_projects == 'eng' ){ description = i.descriptionENG }
+            if ( formatedMessage.projects.description_projects == 'es' ){ description = i.descriptionES }
+            if ( formatedMessage.projects.description_projects == 'fr' ){ description = i.descriptionFR }
+            return <figure key={idx} style={{backgroundImage:i.img}}>
                 <figcaption className='slider___caption'>
                     <h2>{i.title}</h2>
-                    <p>{formatedMessage.projects.description_projects === 'eng' ? i.descriptionENG : i.descriptionES }</p> 
+                    <p>{ description }</p> 
                     <ul>
                       {
                         i.languages.map((l)=> { return <li key={l.name}>{l.name}</li> })
@@ -35,7 +38,7 @@ export default function Projects(props) {
                 </figcaption>
             </figure> 
             
-        ))}
+        })}
     </section>
   );
 }

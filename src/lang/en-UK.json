@@ -44,7 +44,7 @@
         }
     },
     "projects": {
-        "description_projects": "are",
+        "description_projects": "eng",
         "links_projects": {
             "first_link": "Try",
             "second_link": "GitHub"
