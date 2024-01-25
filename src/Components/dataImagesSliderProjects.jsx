@@ -48,7 +48,7 @@ export const images = [
         descriptionFR: `Une boutique d'applications où vous pouvez ajouter des produits au panier et vous connecter pour les sauvegarder en favoris et les partager avec d'autres utilisateurs. Elle présente une barre latérale gauche attrayante et réactive qui change de position de gauche à bas avec un autre design pour s'adapter à l'expérience de l'utilisateur. Et une barre de navigation qui reste fixe, même en faisant défiler, elle reste à la même position.
         Les deux parties ne changent pas, ce qui en fait une application à page unique (SPA, pour Single Page Application).
         Réalisé avec: ` ,
-        languages: [{ name: 'HTML5' }, { name: 'Tailwind' }, { name: 'React' }, { name: 'Laravel' }, { name: 'WS REST Laravel' }, { name: 'MySQL' }],
+        languages: [{ name: 'HTML5' }, { name: 'Tailwind' }, { name: 'React' }, { name: 'WS Node js y Express' }, { name: 'Laravel' }, { name: 'WS REST Laravel' }, { name: 'MySQL' }],
         linksProjects: [{ webpage: 'https://igvtech.online/', github: 'https://github.com/ivanarganda/dashboard-store' }]
     }
 ];
