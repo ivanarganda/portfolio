@@ -4,7 +4,7 @@
 
         "title": "PORTAFOLIO.",
         "title_header": "¿Quien soy?",
-        "text_header": "Persona autodidacta con 7+ años de experiencia en desarrollo web entre ellas 2+ años trabajando en empresas especializándome en la creación y optimización de soluciones de software tanto en frontend como en backend",
+        "text_header": "Persona autodidacta con 7+ años de experiencia en desarrollo web entre ellas 5+ años trabajando en empresas especializándome en la creación y optimización de soluciones de software tanto en frontend como en backend",
         "button_left": "Contactame",
         "button_right": "Descargar CV",
         "button_read_more":"Leer más",
@@ -24,24 +24,24 @@
         "timeline": {
             "timeline_dates": {
                 "first": "Septiembre 2017 - Enero 2018",
-                "second": "Marzo 2022 - Mayo 2022",
+                "second": "Marzo 2018 - Enero 2022",
                 "third": "Mayo 2022 - Noviembre 2023"
             },
             "timeline_experiences": {
                 "experiences_title": {
                     "first": "Desarrollador web en Grupo Backup",
-                    "second": "Técnico de soporte de TI",
+                    "second": "Desarrollador full stack en Sogeti SL",
                     "third": "Desarrollador web en Previlabor"
                 },
                 "experiences_taskes": {
                     "first": ["Gestión de usuarios", "Gestión y mantenimiento de impuestos y presupuestos"],
-                    "second": ["Soporte a usuarios", "Ensamblaje y configuración de monitores"],
+                    "second": ["Desarrollo de interfaces de usuario y en la gestión de datos con JavaScript y PHP, empleando frameworks como React y Laravel y utilizando APIs REST."],
                     "third": ["Desarrollo de aplicaciones para diferentes departamentos", "Consumo y uso de servicios web", "Análisis de aplicaciones creadas y búsqueda de soluciones para mejorarlas"]
                 },
                 "experiences_aptitudes": {
-                    "first": ["Autodidacta", "Implementación de aplicaciones", "Innovación de aplicaciones", "Razonamiento lógico"],
-                    "second": ["Servicio al cliente", "Resolución de problemas", "Mantenimiento de dispositivos", "Inglés"],
-                    "third": ["Autodidacta", "Servicios de TI", "Resolución de problemas", "Implementación de aplicaciones"]
+                    "first": ["Jquery", "HTML", "Javascript" , "CSS" , "PHP" , "C#" , "MySQL", "Ingles"],
+                    "second": ["APIs" , "REST" , "JSON" ,"PHP","Javascript","React","Laravel" , "Ingles" ],
+                    "third": ["PHP","Javascript","React", "Servicios de TIC", "Web Services" , "REST" , "TCP" , "FTP" , "Ingles" , "Resolución de problemas", "Implementación de aplicaciones" , "Git"]
                 }
             }
         }
