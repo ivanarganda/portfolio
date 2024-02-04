@@ -119,10 +119,11 @@
 .section__aboutme .aboutme_content .content__experience .experience__highlights .highlights__content .content__timeline .timeline__list .list__options .list__content {
 
     width: 47%;
+    height: 100%;
     background:rgb(34, 31, 31);
     border-radius:1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
     position: relative;
@@ -137,6 +138,8 @@
     width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: ease-in 300ms;
     opacity: 1;
 
@@ -150,6 +153,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     overflow-y: auto;
     text-wrap: pretty;
     font-size: 1.2rem;

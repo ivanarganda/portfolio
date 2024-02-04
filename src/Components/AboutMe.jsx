@@ -1,9 +1,9 @@
 import React from 'react'
-import BNP from './../assets/images/BNP.jpg';
-import GP from './../assets/images/grupoBackup.jpeg';
-import PRE from './../assets/images/Previlabor.jpg';
+// import BNP from './../assets/images/BNP.jpg';
+// import GP from './../assets/images/grupoBackup.jpeg';
+// import PRE from './../assets/images/Previlabor.jpg';
 import CircularProgressBar from './CircleProgress';
-import ReactApexChart from "react-apexcharts";
+// import ReactApexChart from "react-apexcharts";
 import Text from './Text';
 export default function AboutMe( props ) {
 
@@ -41,7 +41,7 @@ export default function AboutMe( props ) {
                           <ul className='timeline__list'>
                             <li className='list__options list-grupobackup'>
                               <div className='list__content'>
-                                <img width='200' height='200' src={GP} alt="grupo backup" />
+                                <img width='200' height='300' alt="" style={{visibility:'hidden'}} />
                                 <div className='content__text'>
                                   <h4>{formatedMessage.aboutme.timeline.timeline_experiences.experiences_title.first}</h4>
                                   <ul className='text__list-tasks'>
@@ -71,7 +71,7 @@ export default function AboutMe( props ) {
                               <h4>{formatedMessage.aboutme.timeline.timeline_dates.second}</h4>
                               </div>
                               <div className='list__content'>
-                                <img width='200' height='200' src={BNP} alt="bnp paribas" />
+                                <img width='200' height='300' alt="" style={{visibility:'hidden'}} />
                                 <div className='content__text'>
                                 <h4>{formatedMessage.aboutme.timeline.timeline_experiences.experiences_title.second}</h4>
                                   <ul className='text__list-tasks'>
@@ -89,7 +89,7 @@ export default function AboutMe( props ) {
                             </li>
                             <li className='list__options list-previlabor'>
                               <div className='list__content'>
-                                <img width='200' height='200' src={PRE} alt="previlabor" />
+                              <img width='200' height='300' alt="" style={{visibility:'hidden'}} />
                                 <div className='content__text'>
                                   <h4>{formatedMessage.aboutme.timeline.timeline_experiences.experiences_title.third}</h4>
                                   <ul className='text__list-tasks'>
