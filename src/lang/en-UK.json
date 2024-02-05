@@ -1,114 +1,77 @@
 {
-    "header": {
+  "header": {
       "title": "PORTFOLIO.",
       "title_header": "Who am I?",
-      "text_header": "Self-taught individual with 7+ years of experience in web development, including 5+ years working in companies, specializing in the creation and optimization of software solutions in both frontend and backend.",
+      "text_header": "Web developer specialized in creating and optimizing software solutions in frontend and backend. My passion for computer science has led me to a self-taught career, always seeking new opportunities to innovate and stay up-to-date with the latest technologies and trends. My creative approach and ability to adapt to new challenges have been key in my professional development. Thanks to my self-taught quality and a learning-focused mindset, I am starting a business focused on articles about music groups from around the world. I am collaborating with Guillermo and Javier, who have joined me as partners to enhance their blog's reputation and increase its traffic.",
       "button_left": "Contact Me",
       "button_right": "Download CV",
       "button_read_more": "Read More",
       "title_description": "HELLO, I'M",
       "description_me": "IVAN",
       "description_job": "WEB DEVELOPER"
-    },
-    "aboutme": {
+  },
+  "aboutme": {
       "title_aboutme": "About Me",
-      "text_aboutme": "I began my professional career from home, self-taught, due to my burning passion for learning, taking on new challenges, and continuously improving my programming, logic, and performance skills. My journey in this field is not just about fulfilling a dream of working in front of a computer; it is based on my determination to excel and my desire to share my knowledge with the world. IT is not just a profession for me; it is a way of life and a true passion. Even when I'm not formally working, my commitment persists. Day after day, I dedicate time to study, explore the documentation of the latest technologies, stay informed about emerging trends, and constantly seek opportunities for innovation. My self-taught approach has not only allowed me to acquire valuable skills on my own but has also driven me to overcome obstacles and bring a fresh and creative approach to the projects I engage in. I believe that this passion and constant commitment are qualities that can make a difference in any professional environment. With over 7 years of experience in web development, including 5 years working in companies, I have specialized in creating and optimizing software solutions in both frontend and backend, using technologies such as HTML, CSS, JavaScript, ReactJS, PHP, and NodeJS Express, among others. In my last role at Previlabor, I significantly contributed to improving internal processes, including the implementation of an automated document generation system and a RESTful web API service for Laboratorios Echevarne, which increased efficiency by more than 15%. Additionally, I achieved notable optimization in PDF document generation within the company's ERP, reducing processing time from one hour to just 4 seconds. I am passionate about finding innovative solutions that not only enhance operational efficiency but also have a positive impact on revenue and productivity. My experience has allowed me to develop strong skills in problem-solving, process optimization, and teamwork. I am seeking opportunities where I can contribute my web development experience and continue to grow professionally.",
+      "text_aboutme": "I began my professional career due to my burning passion for learning, taking on new challenges, and continuously improving my skills in programming, logic, and performance. My journey in this field is not limited to fulfilling a dream of working in front of a computer; it is based on my determination to excel and my desire to share my knowledge with the world. Computer science is not just a profession for me; it is a way of life and a true passion. Even when I am not formally working, my commitment persists. Day after day, I dedicate time to study, explore the documentation of the latest technologies, stay informed about emerging trends, and constantly seek opportunities for innovation. My self-taught approach has not only allowed me to acquire valuable skills on my own but has also driven me to overcome obstacles and bring a fresh and creative approach to the projects I engage in. I am convinced that this passion and constant commitment are qualities that can make a difference in any professional environment. With 5 years of experience working in companies, I have specialized in creating and optimizing software solutions in both frontend and backend, using technologies such as HTML, CSS, JavaScript, ReactJS, PHP, and NodeJS Express, among others. In my last role at Previlabor, I contributed significantly to improving internal processes, with notable achievements such as implementing an automatic document generation system and a RESTful web API service for Laboratorios Echevarne, which increased efficiency by over 15%. Additionally, I achieved a significant optimization in the generation of PDF documents in the company's ERP, reducing processing time from one hour to just 4 seconds. I am passionate about finding innovative solutions that not only improve operational efficiency but also have a positive impact on revenue and productivity. My experience has allowed me to develop strong skills in problem-solving, process optimization, and teamwork. I am looking for opportunities where I can contribute my web development expertise and continue to grow professionally.",
       "title_circles": {
-        "first_circle": "Sales",
-        "second_circle": "Revenue",
-        "third_circle": "Optimization"
+          "first_circle": "Sales",
+          "second_circle": "Revenue",
+          "third_circle": "Optimization"
       },
       "timeline": {
-        "timeline_dates": {
-          "first": "September 2017 - January 2018",
-          "second": "March 2018 - January 2022",
-          "third": "May 2022 - November 2023"
-        },
-        "timeline_experiences": {
-          "experiences_title": {
-            "first": "Web Developer at Grupo Backup",
-            "second": "Full Stack Developer at Sogeti SL",
-            "third": "Web Developer at Previlabor"
+          "timeline_dates": {
+              "first": "September 2017 - January 2018",
+              "second": "March 2018 - January 2022",
+              "third": "May 2022 - November 2023"
           },
-          "experiences_taskes": {
-            "first": [
-              "User management",
-              "Tax and budget management"
-            ],
-            "second": [
-              "Development of user interfaces and data management using JavaScript and PHP, utilizing frameworks such as React and Laravel, and using RESTful APIs."
-            ],
-            "third": [
-              "Development of applications for different departments",
-              "Consumption and use of web services",
-              "Analysis of created applications and search for solutions for improvement"
-            ]
-          },
-          "experiences_aptitudes": {
-            "first": [
-              "jQuery",
-              "HTML",
-              "Javascript",
-              "CSS",
-              "PHP",
-              "C#",
-              "MySQL",
-              "English"
-            ],
-            "second": [
-              "APIs",
-              "REST",
-              "JSON",
-              "PHP",
-              "Javascript",
-              "React",
-              "Laravel",
-              "English"
-            ],
-            "third": [
-              "PHP",
-              "Javascript",
-              "React",
-              "IT Services",
-              "Problem Solving",
-              "Application Implementation",
-              "Git"
-            ]
+          "timeline_experiences": {
+              "experiences_title": {
+                  "first": "Web Developer at Grupo Backup",
+                  "second": "Full Stack Developer at Sogeti SL",
+                  "third": "Web Developer at Previlabor"
+              },
+              "experiences_taskes": {
+                  "first": ["User management", "Tax and budget management"],
+                  "second": ["Development of user interfaces and data management using JavaScript and PHP, employing frameworks like React and Laravel and utilizing REST APIs."],
+                  "third": ["Development of applications for various departments", "Consumption and use of web services", "Analysis of created applications and finding solutions for improvement"]
+              },
+              "experiences_aptitudes": {
+                  "first": ["jQuery", "HTML", "JavaScript", "CSS", "PHP", "C#", "MySQL", "English"],
+                  "second": ["APIs", "REST", "JSON", "PHP", "JavaScript", "React", "Laravel", "English"],
+                  "third": ["PHP", "JavaScript", "React", "TIC Services", "Web Services", "REST", "TCP", "FTP", "English", "Problem-solving", "Application implementation", "Git"]
+              }
           }
-        }
       }
-    },
-    "projects": {
-      "description_projects": "es",
+  },
+  "projects": {
+      "description_projects": "is",
       "links_projects": {
-        "first_link": "Try",
-        "second_link": "GitHub"
+          "first_link": "Try",
+          "second_link": "GitHub"
       }
-    },
-    "contact__form": {
-      "form_title": "Let's Talk. Get in Touch",
-      "form_labels": [
-        {
-          "label": "Tell Us Your Name *",
-          "placeholder": "Full Name"
-        },
-        {
-          "label": "Your Email *",
-          "placeholder": "Example: example@email.com"
-        },
-        {
-          "label": "Subject *",
-          "placeholder": "Write a Subject"
-        }
+  },
+  "contact__form": {
+      "form_title": "Let's Talk. Get in Touch with Me",
+      "form_labels": [{
+              "label": "Tell us your name *",
+              "placeholder": "Full Name"
+          },
+          {
+              "label": "Your email address *",
+              "placeholder": "Example: example@email.com"
+          },
+          {
+              "label": "Subject *",
+              "placeholder": "Write a subject"
+          }
       ],
       "form_textarea": {
-        "label": "What's the offer for me? *",
-        "placeholder": "Write me a message"
+          "label": "What's the offer for me? *",
+          "placeholder": "Write me a message"
       },
       "form_buttons": {
-        "first": "Send Message",
-        "second": "Clear Fields"
+          "first": "Send Message",
+          "second": "Clear Fields"
       }
-    }
   }
-  
+}
